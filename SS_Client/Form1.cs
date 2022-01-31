@@ -24,8 +24,8 @@ namespace SS_Client
         {
             var client = new TcpClient();
             client.Connect(IPAddress.Loopback, 9290);
-
             var UdpClient = new UdpClient(9590);
+
             var ep = new IPEndPoint(IPAddress.Loopback, 0);
 
             for (int i = 0; i < 10; i++)
